@@ -1,0 +1,68 @@
+========ADMIN=======
+login:
+css,js,html           done
+
+home:
+css,js,html
+
+    view():   
+        css,js,html     done
+
+    add:
+        css,js,html
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS UNIVERSITY - Book a Lab</title>
+    <link rel="stylesheet" href="staff-add.css">
+</head>
+<body>
+    <div class="App">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">SS UNIVERSITY</div>
+            <div class="nav-items">
+                <h2 class="create-btn">LUCKY</h2>
+                <img src="profilepic.jpeg" alt="profile" class="profile-pic">
+            </div>
+        </nav>
+        <div id="body">
+            <button id="openFormBtn">+</button>
+
+            <div id="bookingForm">
+                <h2>Book a Lab</h2>
+                <label>Start Time: <input type="time" id="startTime"></label>
+                <label>End Time: <input type="time" id="endTime"></label>
+                <label>Date: <input type="date" id="labDate"></label>
+                <label>Number of Students: <input type="number" id="studentCount" min="1"></label>
+                <label>Lab Type:
+                    <select id="labType">
+                        <option value="Computer Lab">Computer Lab</option>
+                        <option value="Physics Lab">Physics Lab</option>
+                        <option value="IOT Lab">IOT Lab</option>
+                        <option value="ECE Lab">ECE Lab</option>
+                        <option value="EEE Lab">EEE Lab</option>
+                        <option value="Distributed Lab">Distributed Lab</option>
+                        <option value="Create Lab"> Create Lab</option>
+                        <option value="BIOS: Ethical Hacking Labs"> BIOS: Ethical Hacking Labs</option>
+                        <option value="Multi Modal Application Lab">Multi Modal Application Lab</option>
+                    </select>
+                </label>
+                <div class="button-group">
+                    <button id="confirm">Confirm</button>
+                    <button id="delete">Delete</button>
+                </div>
+                <p id="message"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="staff-add.js"></script>
+</body>
+</html>

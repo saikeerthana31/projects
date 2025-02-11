@@ -1,0 +1,125 @@
+/* Smooth Fade-in for Page */
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navbar Animation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1405px; /* Changed for responsiveness */
+    background-color: #60b8c7;
+    padding: 15px 20px;
+    border: 5px solid black;
+    margin: auto;
+    animation: slideDown 0.8s ease-in-out;
+}
+/* Aligns name and image side by side inside a rounded box */
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between text and image */
+    background-color: white; /* Background color */
+    padding: 8px 15px;
+    border-radius: 50px; /* Makes it rounded */
+    border: 3px solid black;
+}
+
+/* Ensures the text is vertically centered */
+.create-btn {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+/* Adjust profile picture inside rounded box */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #16132e;
+}
+
+/* Profile Picture - Glow Effect */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Body Box */
+#bodybox {
+    background-color: rgb(79, 177, 204);
+    max-width: 1405px;
+    height: 660px;
+    border: 5px solid black;
+    margin: auto;
+    background-image: url('homepic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Buttons - Floating & Hover Effects */
+#button1, #button2, #button3 {
+    display: flex;
+    height: 100px;
+    width: 1000px;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    background-color: rgb(66, 142, 154);
+    border-radius: 15px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 15px rgb(255, 254, 254);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    animation: floatUp 1s ease-in-out;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+#button1:hover, #button2:hover, #button3:hover {
+    background-color: #add6dd;
+    transform: scale(1.05);
+}
+
+/* Click Effect */
+#button1:active, #button2:active, #button3:active {
+    transform: scale(0.95);
+}

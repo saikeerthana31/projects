@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a lab</title>
+    <link rel="stylesheet" href="staff-view.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SS UNIVERSITY</div>
+        <div class="nav-items">
+            <h2 class="create-btn">LUCKY</h2>
+            <img src="profilepic.jpeg" alt="profile" class="profile-pic">
+        </div>
+    </nav>
+    
+    <div id="body">
+        <h1>UPCOMING LABS</h1>
+        
+        <div class="boxes">
+            <h2>Lab-1</h2>
+            <div class="details">
+                <h3><strong>Number of students:</strong></h3>
+                <h3 id="date"><strong>Date:</strong> 12/2/2025</h3>
+                <h3 id="time"><strong>Timings:</strong> 11:30 am to 1:15 pm</h3>
+            </div>
+            <div class="button-con">
+                <button class="delete" onclick="deleteAction()">Delete</button>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <h2>Lab-2</h2>
+            <div class="details">
+                <h3><strong>Number of students:</strong></h3>
+                <h3 id="date"><strong>Date:</strong> 13/2/2025</h3>
+                <h3 id="time"><strong>Timings:</strong> 10:30 am to 12:15 pm</h3>
+            </div>
+            <div class="button-con">
+                <button class="delete" onclick="deleteAction()">Delete</button>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <h2>Lab-3</h2>
+            <div class="details">
+                <h3><strong>Number of students:</strong></h3>
+                <h3 id="date"><strong>Date:</strong> 14/2/2025</h3>
+                <h3 id="time"><strong>Timings:</strong> 2:25 am to 4:15 pm</h3>
+            </div>
+            <div class="button-con">
+                <button class="delete" onclick="deleteAction()">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="staff-view.js"></script>
+</body>
+</html>

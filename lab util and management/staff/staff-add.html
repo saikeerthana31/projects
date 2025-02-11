@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS UNIVERSITY - Lab Booking</title>
+    <link rel="stylesheet" href="staff-add.css">
+</head>
+<body>
+    <div class="App">
+        <h1>SS UNIVERSITY</h1>
+        <p id="header"></p>
+        <!-- <button id="openFormBtn">+</button> -->
+
+        <div id="outerbox" class="hidden">
+            <div id="innerbox">
+                <h1>---- Book a Lab ----</h1>
+                <div id="formContainer">
+                    <form>
+                        <label>Start Time: <input type="time" id="startTime"></label><br><br>
+                        <label>End Time: <input type="time" id="endTime"></label><br><br>
+                        <label>Date: <input type="date" id="labDate"></label><br><br>
+                        <label>Number of Students: <input type="number" id="studentCount" min="1"></label><br><br>
+                        <label>Lab Type:
+                        <select id="labType" required>
+                            <option value="" disabled selected>Select a Lab</option>
+                            <option value="Computer Lab">Computer Lab</option>
+                            <option value="Physics Lab">Physics Lab</option>
+                            <option value="IOT Lab">IOT Lab</option>
+                            <option value="ECE Lab">ECE Lab</option>
+                            <option value="EEE Lab">EEE Lab</option>
+                            <option value="Distributed Lab">Distributed Lab</option>
+                            <option value="Create Lab"> Create Lab</option>
+                            <option value="BIOS: Ethical Hacking Labs"> BIOS: Ethical Hacking Labs</option>
+                            <option value="Multi Modal Application Lab">Multi Modal Application Lab</option>
+                        </select>
+                        </label><br><br>
+                        <div class="button-group">
+                            <button type="submit" id="confirm" onclick="handleConfirm(event)">Confirm</button>
+                            <button type="reset" id="delete" onclick="handleDelete()">Delete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="staff-add.js"></script>
+</body>
+</html>
