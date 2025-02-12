@@ -48,7 +48,7 @@
     padding: 15px 20px;
     border: 3px solid #000000; 
     background-color: #60b8c7;
-    max-width: 1250px;
+    width: 1400px;
 }
 .logo {
     font-size: 22px;
@@ -80,11 +80,12 @@
     object-fit: cover;
     border: 2px solid white;
 }
+
 #outbox {
-    height: 600px;
-    width: 1292px;
+    height: 685px;
+    width: 1445px;
     background-size: 1296px 600px; 
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-repeat: no-repeat;
     position: relative;
     border: 2px solid #000000;
 }
@@ -92,16 +93,18 @@
     font-size: 70px;
     color: white;
     background-color: #04677e;
-    width: 1292px;
+    width: 1445px;
     text-align: center;
+    border: 2px solid black;
 }
+
 #inbox{
     background-color: #000000;
-    height: 520px;
-    width: 1292px;
-    background-image: url(labreqpic.jpeg);
-    background-repeat: no-repeat;
-    background-size: 1300px 520px;
+    height: 600px;
+    width: 1445px;
+    background-image: url(lab.jpeg);
+    background-repeat: repeat;
+    background-size: 1450px 600px;
     position: relative;
 }
 .boxreqs{
