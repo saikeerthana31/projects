@@ -3,7 +3,7 @@ function login() {
     let password = document.querySelector(".box[type='password']").value;
 
     if (username && password) {
-        window.location.href = "staff-home.html"; // Redirect to home page
+        window.location.href = "staff-homeo.html"; // Redirect to home page
     } else {
         alert("Please enter both username and password.");
     }

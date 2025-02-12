@@ -1,0 +1,202 @@
+body {
+    animation: fadeIn 1s ease-in-out;
+    background-image: url("homepic.jpg");
+}
+
+.navbar {
+    animation: slideDown 0.8s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1405px;
+    background-color: #60b8c7;
+    padding: 15px 20px;
+    border: 5px solid black;
+    margin: auto;
+}
+
+#button1, #button2 {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#button1:hover, #button2:hover {
+    background-color: #add6dd;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #16132e;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.create-btn {
+    background-color: #07070a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.innerbox {
+    background-color: rgb(232, 249, 255);
+    border: 2px solid black;
+    padding: 20px;
+    height: 190px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.innerbox {
+    animation: popIn 0.5s ease-in-out;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #82e3da;
+    padding: 20px;
+    height: 100vh;
+    border: 2px solid black;
+    border-top: 0px;
+}
+
+.properties {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #60b8c7;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.properties:hover {
+    background-color: #4a98a5;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#dashboardmsg{
+    text-align: center;
+}
+
+.calendar-container {
+    background-color: #a0d2eb; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto; /* Center the box */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.calendar-container iframe {
+    width: 100%;
+    height: 600px; /* Adjust height if needed */
+    border: none;
+}
+
+/* Animate calendar container on load */
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.calendar-container {
+    animation: slideUp 0.8s ease-in-out;
+}
+
+/* Subtle hover effect for buttons */
+.properties {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.properties:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in effect for sidebar */
+@keyframes fadeInSidebar {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.sidebar {
+    animation: fadeInSidebar 0.8s ease-in-out;
+}
+
+/* Subtle floating effect for profile picture */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.profile-pic {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Glowing effect for navbar */
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); }
+    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+}
+
+.navbar {
+    animation: glowing 2s infinite alternate;
+}
+
+/* Pop-in effect for inner boxes */
+@keyframes popIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.innerbox {
+    animation: popIn 0.6s ease-in-out;
+}
