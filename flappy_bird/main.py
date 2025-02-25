@@ -20,8 +20,8 @@ clock = pygame.time.Clock()
 
 # Load images
 bird_img = pygame.image.load("bird.png")
-bg_img = pygame.image.load("background.png")
-pipe_img = pygame.image.load("pipe.png")
+bg_img = pygame.image.load("background.jpeg")
+pipe_img = pygame.image.load("pipe.jpeg")
 
 class Bird:
     def __init__(self):
